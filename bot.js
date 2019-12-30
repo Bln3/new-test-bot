@@ -9,7 +9,7 @@ client.on('guildMemberAdd', member => {
   
   console.log('User' + member.user.username + ' has joined the server!')
   
-  const role = member.guild.roles.find('name', 'Member');
+  var role = member.guild.roles.find('name', 'Member');
   member.addRole(role
   
 });
